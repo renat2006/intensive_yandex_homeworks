@@ -1,10 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
+
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>404</title>
+
+
+    <link href="main.css" rel="stylesheet">
 </head>
+
 <body>
+
+<script type="text/javascript">
+    function search() {
+
+        var value = document.getElementById("srch_field").value;
+
+        request = "https://yandex.ru/search/?text=" + value;
+
+        window.location.href = request;
+    }
+</script>
+<header>
+
+</header>
+
+<main>
+    <div class="info">
+
+        <div class="search">
+
+            <img src="logo.png" class="logo">
+            <input id="srch_field" placeholder="Найдется всё" type="text">
+
+            <button class="btn" onclick="search()">Найти</button>
+
+        </div>
+        <div class="text">
+
+            <h1>Ошибка 404. Нет такой страницы</h1>
+            <h3>Если вы считаете, что страницы нет по нашей вине, <a href="#">напишите нам</a></h3>
+            <div class="links">
+                <div><a>Маркет</a> — смартфоны Huawei</div>
+                <div><a>Практикум</a> — стать аналитиком</div>
+                <div><a>Плюс</a> — теперь и для семьи</div>
+                <div><a>Едадил</a> — скидки в супермаркетах</div>
+                <div><a>Музыка</a> — подкаст где угодно</div>
+                <div><a>Толока</a> — удалённый заработок</div>
+                <div><a>Кинопоиск</a> — "Нулевой пациент"</div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+</main>
+
+<footer>
+
+    <div>Компания About ©Яндекс</div>
+</footer>
 
 </body>
 </html>
